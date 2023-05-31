@@ -3,9 +3,14 @@
 @import "@csstools/normalize.css/normalize";
 @import "concrete.css/concrete";
 
+html {
+  height: -webkit-fill-available;
+}
+
 .site-body {
   margin: 0;
 	min-height: 100vh;
+  min-height: -webkit-fill-available;
   display: grid;
   grid-template-rows: 1fr auto;
 }
