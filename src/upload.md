@@ -2,7 +2,7 @@
 title: "generatiONE"
 layout: "base.njk"
 ---
-Herzlich Willkommen zur generatiONE!
+**Herzlich Willkommen zur generatiONE!**
 
 Sie haben sich für einen Upload und damit für einen Ersatz Ihrer Gehirnmasse durch Silikon-Chips entschieden. Sie sind nun Teil der ersten Generation Cyborgs auf der Erde, der generatiONE.
 
