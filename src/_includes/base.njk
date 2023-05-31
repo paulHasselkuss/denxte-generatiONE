@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="{{ '/styles/app.css' | url }}">
+
+  <!-- Site info -->
+  <title>{{ title }}{%if page.url !== "/"%} | {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ title }}">
+
+  <!-- SEO -->
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.baseUrl }}{{ page.url | url }}" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#0F0F0F" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fdfdfd">
+</head>
+
+<body class="site-body">
+
+  <main class="site-content">
+    <div>
+      {{ content | safe }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <ul>
+      <li><a href="https://www.hhu.de/impressum">Impressum</a></li>
+      <li><a href="https://www.hhu.de/datenschutzerklaerung">Datenschutz</a></li>
+    </ul>
+  </footer>
+
+</body>
